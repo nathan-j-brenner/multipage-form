@@ -1,6 +1,6 @@
-angular.module('myApp').controller('State1List', State1List);
+angular.module('myApp').controller('State1', State1);
 
-function State1List(messages){
+function State1(messages, $state){
 	var vm = this;
 	
 	vm.newMessage = "Hello World!";
@@ -8,5 +8,6 @@ function State1List(messages){
 	vm.addMessage = function (message) {
 		messages.add(message);
 		vm.newMessage = '';
+		$state.go('state2')
 	};
 }

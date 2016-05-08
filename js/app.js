@@ -1,27 +1,17 @@
 
 angular.module('myApp', ['ui.router']).config(function($stateProvider, $urlRouterProvider) {
-//
-// For any unmatched url, redirect to /state1
+
 $urlRouterProvider.otherwise("/state1");
-//
-// Now set up the states
+
 $stateProvider
 	.state('state1', {
 		url: "/state1",
-		templateUrl: "partials/state1.html"
-	})
-	.state('state1.list', {
-		url: "/list",
-		templateUrl: "partials/state1.list.html",
-		controller: "State1List as vm"
+		templateUrl: "partials/state1.html",
+		controller: "State1 as vm"
 	})
 	.state('state2', {
 		url: "/state2",
-		templateUrl: "partials/state2.html"
+		templateUrl: "partials/state2.html",
+		controller: 'State2 as vm'
 	})
-	.state('state2.list', {
-		url: "/list",
-		templateUrl: "partials/state2.list.html",
-		controller: 'State2Items as vm'
-	});
 });
