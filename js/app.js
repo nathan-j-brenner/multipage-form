@@ -14,4 +14,8 @@ $stateProvider
 		templateUrl: "partials/form-review.html",
 		controller: 'Review as vm'
 	})
+	.state('submit', {
+		url: '/submit',
+		templateUrl: 'partials/form-submit.html',
+	});
 });
