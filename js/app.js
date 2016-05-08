@@ -13,9 +13,10 @@ $stateProvider
 	.state('state1.list', {
 		url: "/list",
 		templateUrl: "partials/state1.list.html",
-		controller: function($scope) {
-			$scope.items = ["A", "List", "Of", "Items"];
-	}
+		controller: "State1List"
+		// controller: function($scope) {
+		// 	$scope.items = ["A", "List", "Of", "Items"];
+		// }
 	})
 	.state('state2', {
 		url: "/state2",
@@ -24,8 +25,6 @@ $stateProvider
 	.state('state2.list', {
 		url: "/list",
 		templateUrl: "partials/state2.list.html",
-		controller: function($scope) {
-			$scope.things = ["A", "Set", "Of", "Things"];
-		}
+		controller: 'State2Items'
 	});
 });
