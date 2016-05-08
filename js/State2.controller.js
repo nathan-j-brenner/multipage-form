@@ -5,8 +5,9 @@ function State2 (Messages, $state) {
 	
 	vm.quest = Messages.quest;
 	
-	vm.addQuest = function(quest) {
-		Messages.addQuest(quest);
+	vm.add = function(quest){
+		Messages.add('quest', quest);
 		$state.go('state3');
 	}
+	
 }

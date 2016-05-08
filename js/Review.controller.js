@@ -4,7 +4,7 @@ function Review(Messages, $state) {
 	var vm = this;
 	
 	vm.messages = Messages;
-	// vm.messages = Messages.list;
+
 	vm.submit = function(){
 		alert('Submitted!');
 		$state.go('submit');

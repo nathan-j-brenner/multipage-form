@@ -5,8 +5,8 @@ function State3(Messages, $state){
 	
 	vm.color = Messages.color;
 	
-	vm.addColor = function(color){
-		Messages.addColor(color);
+	vm.add = function(color){
+		Messages.add('color', color);
 		$state.go('review');
 	}
 }

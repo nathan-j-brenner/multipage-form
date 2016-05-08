@@ -5,15 +5,8 @@ function State1(Messages, $state){
 	
 	vm.name = Messages.name;
 	
-	vm.addName = function(name){
-		Messages.addName(name);
+	vm.add = function(name){
+		Messages.add('name', name);
 		$state.go('state2');
 	}
-	// vm.newMessage = "Hello World!";
-	
-	// vm.addMessage = function (message) {
-	// 	Messages.add(message);
-	// 	vm.newMessage = '';
-	// 	$state.go('review')
-	// };
 }
