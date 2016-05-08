@@ -7,6 +7,13 @@ function Responses () {
 		responses[property] = response;
 	}
 	
+	responses.reset = function(){
+		responses.name = '';
+		responses.quest = '';
+		responses.color = '';
+		responses.questions = [];
+	}
+	
 	responses.questions = [];
 	
 	responses.saveQuestion = function(question){

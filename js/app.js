@@ -27,5 +27,6 @@ $stateProvider
 	.state('submit', {
 		url: '/submit',
 		templateUrl: 'partials/form-submit.html',
+		controller: 'Submit as vm'
 	});
 });
