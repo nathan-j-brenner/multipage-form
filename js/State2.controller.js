@@ -1,4 +1,4 @@
-angular.module('myApp').controller('State2', State2);
+angular.module('app').controller('State2', State2);
 
 function State2 (Responses, Questions, $state) {
 	var vm = this;
@@ -9,6 +9,7 @@ function State2 (Responses, Questions, $state) {
 	
 	vm.add = function(quest){
 		Responses.add('quest', quest);
+		Responses.saveQuestion(vm.question);
 		$state.go('state3');
 	}
 	

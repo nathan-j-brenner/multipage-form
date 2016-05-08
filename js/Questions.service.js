@@ -1,4 +1,4 @@
-angular.module('myApp').factory('Questions', Questions);
+angular.module('app').factory('Questions', Questions);
 
 function Questions () {
 	var questions = [
