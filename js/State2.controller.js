@@ -1,12 +1,12 @@
 angular.module('myApp').controller('State2', State2);
 
-function State2 (Messages, $state) {
+function State2 (Questions, $state) {
 	var vm = this;
 	
-	vm.quest = Messages.quest;
+	vm.quest = Questions.quest;
 	
 	vm.add = function(quest){
-		Messages.add('quest', quest);
+		Questions.add('quest', quest);
 		$state.go('state3');
 	}
 	

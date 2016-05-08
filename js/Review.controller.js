@@ -1,9 +1,9 @@
 angular.module('myApp').controller('Review', Review);
 
-function Review(Messages, $state) {
+function Review(Questions, $state) {
 	var vm = this;
 	
-	vm.messages = Messages;
+	vm.questions = Questions;
 
 	vm.submit = function(){
 		alert('Submitted!');
