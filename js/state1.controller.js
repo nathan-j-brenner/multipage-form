@@ -8,6 +8,6 @@ function State1(messages, $state){
 	vm.addMessage = function (message) {
 		messages.add(message);
 		vm.newMessage = '';
-		$state.go('state2')
+		$state.go('review')
 	};
 }
