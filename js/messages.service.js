@@ -1,6 +1,6 @@
-angular.module('myApp').factory('messages', messages);
+angular.module('myApp').factory('Messages', Messages);
 
-function messages () {
+function Messages () {
 	var messages = {};
 	
 	messages.list = [];
