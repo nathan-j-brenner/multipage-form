@@ -1,8 +1,11 @@
 <!-- partials/state2.html -->
 <h2>Form Review</h2>
 <hr/>
-<ul>
+<!--<ul>
   <li ng-repeat="message in vm.messages">{{ message.id }} : {{ message.text }}</li>
-</ul>
-<button ui-sref="state1">Back</button>
+</ul>-->
+<p>Your name is {{vm.messages.name}}</p>
+<p>Your quest is {{vm.messages.quest}}</p>
+<p>Your favorite color is {{vm.messages.color}}</p>
+<button ui-sref="state2">Back</button>
 <button ng-click="vm.submit()">Submit</button>
