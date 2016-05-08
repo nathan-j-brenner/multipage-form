@@ -2,8 +2,10 @@ angular.module('myApp').controller('State3', State3);
 
 function State3(Responses, Questions, $state){
 	var vm = this;
+
+	var random = Math.floor(Math.random()*3);
 	
-	vm.question = Questions[2][0];
+	vm.question = Questions[2][random];
 	
 	vm.color = Responses.color;
 	
