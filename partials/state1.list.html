@@ -1,5 +1,9 @@
 <!-- partials/state1.list.html -->
 <h3>List of State 1 Items</h3>
+<form ng-submit="vm.addMessage(vm.newMessage)">
+	<input type="text" ng-model="vm.newMessage">
+	<button type="submit">Add Message</button>
+</form>
 <ul>
   <li ng-repeat="item in vm.items">{{ item }}</li>
 </ul>
