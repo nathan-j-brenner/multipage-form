@@ -3,5 +3,6 @@
 <p>Your name is {{vm.responses.name}}.</p>
 <p>Your quest is {{vm.responses.quest}}.</p>
 <p>Your favorite color is {{vm.responses.color}}.</p>
-<button ui-sref="state2">Change your answers</button>
-<button ng-click="vm.submit()">Face judgement</button>
+<button ui-sref="state1" type="button" class="btn btn-default">Start over</button>
+<button ui-sref="state2" type="button" class="btn btn-warning">Change your answers</button>
+<button ng-click="vm.submit()" type="button" class="btn btn-danger">Face judgement</button>

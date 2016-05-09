@@ -2,12 +2,13 @@ angular.module('app').controller('Review', Review);
 
 function Review(Questions, Responses, $state) {
 	var vm = this;
-	
+
 	vm.questions = Questions;
-	
+
 	vm.responses = Responses;
 
 	vm.submit = function(){
+		// alert(vm.responses.questions[2]);
 		if(vm.responses.questions[2] === vm.questions[0]){
 			alert('Go on. Off you go.');
 		}
