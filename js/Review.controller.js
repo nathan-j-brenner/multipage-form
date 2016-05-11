@@ -1,3 +1,5 @@
+(function(){
+
 angular.module('app').controller('Review', Review);
 
 function Review(Questions, Responses, $state) {
@@ -6,6 +8,8 @@ function Review(Questions, Responses, $state) {
 	vm.questions = Questions;
 
 	vm.responses = Responses;
+	
+	// vm.thirdResponse = Responses[2].response;
 
 	vm.submit = function(){
 		// alert(vm.responses.questions[2]);
@@ -26,3 +30,5 @@ function Review(Questions, Responses, $state) {
 		$state.go('submit');
 	}
 }
+
+})();

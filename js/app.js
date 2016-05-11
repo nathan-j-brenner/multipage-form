@@ -1,4 +1,5 @@
-
+(function(){
+	
 angular.module('app', ['ui.router']).config(function($stateProvider, $urlRouterProvider) {
 
 $urlRouterProvider.otherwise("/state1");
@@ -30,3 +31,5 @@ $stateProvider
 		controller: 'Submit as vm'
 	});
 });
+
+})();

@@ -1,17 +1,21 @@
+(function(){
+
 angular.module('app').controller('State3', State3);
 
 function State3(Responses, Questions, $state){
 	var vm = this;
-
+	
 	var random = Math.floor(Math.random()*3);
 	
-	vm.question = Questions[2][random];
+	vm.questionObj = Questions[2][random];
 	
-	vm.color = Responses.color;
+	vm.third = Responses.third;
 	
-	vm.add = function(color){
-		Responses.add('color', color);
-		Responses.saveQuestion(vm.question);
+	vm.add = function(response){
+		Responses.add('third', response);
+		Responses.saveQuestion(vm.questionObj);
 		$state.go('review');
 	}
 }
+
+})();

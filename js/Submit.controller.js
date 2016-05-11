@@ -1,3 +1,5 @@
+(function(){
+
 angular.module('app').controller('Submit', Submit);
 
 function Submit(Responses, $state){
@@ -10,3 +12,5 @@ function Submit(Responses, $state){
 		$state.go('state1');
 	}
 }
+
+})();

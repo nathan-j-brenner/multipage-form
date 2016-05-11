@@ -1,7 +1,7 @@
-<form ng-submit="vm.add(vm.color)">
+<form ng-submit="vm.add(vm.third)">
 	<div class="form-group">
-		<label>{{vm.question}}</label>
-		<input class="form-control" ng-model="vm.color">
+		<label>{{vm.questionObj.question}}</label>
+		<input class="form-control" ng-model="vm.third">
 	</div>
 	<button ui-sref="state2" type="button" class="btn btn-warning">Back</button>
 	<button type="submit" type="button" class="btn btn-primary">Next</button>

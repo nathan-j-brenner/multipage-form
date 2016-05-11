@@ -1,3 +1,5 @@
+(function(){
+
 angular.module('app').factory('Responses', Responses);
 
 function Responses () {
@@ -22,3 +24,5 @@ function Responses () {
 	
 	return responses;
 }
+
+})();
