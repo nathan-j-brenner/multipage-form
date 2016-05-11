@@ -1,4 +1,5 @@
 (function(){
+	'use strict';
 
 angular.module('app').controller('Review', Review);
 
@@ -6,13 +7,10 @@ function Review(Questions, Responses, $state) {
 	var vm = this;
 
 	vm.questions = Questions;
-
 	vm.responses = Responses;
+	vm.submit = submit;
 	
-	// vm.thirdResponse = Responses[2].response;
-
-	vm.submit = function(){
-		// alert(vm.responses.questions[2]);
+	function submit () {
 		if(vm.responses.questions[2] === vm.questions[0]){
 			alert('Go on. Off you go.');
 		}
