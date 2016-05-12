@@ -3,17 +3,17 @@
 
 angular.module('app').controller('State1', State1);
 
-function State1(Responses, Questions, $state){
+function State1(ResponsesService, Questions, $state){
 	var vm = this;
 	
 	vm.add = add;
-	vm.name = Responses.name;
+	vm.name = ResponsesService.name;
 	vm.question = Questions[0][0].question;
-	vm.questions = Responses.questions;
+	vm.questions = ResponsesService.questions;
 	
 	function add (response){
-		Responses.add('first', response);
-		Responses.saveQuestion(vm.question);
+		ResponsesService.add('first', response);
+		ResponsesService.saveQuestion(vm.question);
 		$state.go('state2');
 	}
 }

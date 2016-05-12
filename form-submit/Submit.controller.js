@@ -3,14 +3,14 @@
 
 angular.module('app').controller('Submit', Submit);
 
-function Submit(Responses, $state){
+function Submit(ResponsesService, $state){
 	var vm = this;
 	
-	vm.responses = Responses;
+	vm.responses = ResponsesService;
 	vm.restart = restart;
 	
 	function restart () {
-		Responses.reset();
+		ResponsesService.reset();
 		$state.go('state1');
 	}
 }

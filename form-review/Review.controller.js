@@ -3,11 +3,11 @@
 
 angular.module('app').controller('Review', Review);
 
-function Review(Questions, Responses, $state) {
+function Review(Questions, ResponsesService, $state) {
 	var vm = this;
 
 	vm.questions = Questions;
-	vm.responses = Responses;
+	vm.responses = ResponsesService;
 	vm.submit = submit;
 	
 	function submit () {
