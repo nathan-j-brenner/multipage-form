@@ -1,10 +1,11 @@
 See this [blog post](http://nathan-j-brenner.github.io/multipage-form) for more details.
 
+novalidate prevents HTML5 validation since we will be validating ourselves -->
+
+
 todo:
 
 write unit tests with karma and jasmine
-
-refactor services
 
 add form validation
 

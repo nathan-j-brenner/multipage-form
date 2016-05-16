@@ -1,7 +1,7 @@
-<form ng-submit="vm.add(vm.first)">
+<form ng-submit="vm.add(vm.first)" name="state1">
 	<div class="form-group">
 		<label>{{vm.question}}</label>
-		<input class="form-control" ng-model="vm.first">
+		<input class="form-control" ng-model="vm.first" name="first" type="text" required ng-minlength="2" ng-maxlength="10">
 	</div>
 	<button type="submit" type="button" class="btn btn-primary">Next</button>
 </form>
